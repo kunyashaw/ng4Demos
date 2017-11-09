@@ -1,0 +1,16 @@
+<h1>这是Demo08</h1>
+
+<!--双向数据绑定-->
+<input type="checkbox" [(ngModel)]="isEnable"/>
+是否同意本站的协议
+
+<button [disabled]="!isEnable">注册</button>
+
+<!--显示输入记录-->
+<input type="text" [(ngModel)]="myInput"
+ (ngModelChange)="saveInputHistory($event)"/>
+<ul>
+    <li *ngFor="let tmp of historyList">
+        {{tmp}}
+    </li>
+</ul>

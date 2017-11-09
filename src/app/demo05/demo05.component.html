@@ -1,0 +1,15 @@
+
+<h2>Hello This is Demo05 Component</h2>
+
+<!--事件绑定 -->
+<button (click)="handleClick()">clickMe</button>
+
+<!--属性绑定 是通过[] -->
+<img [src]="'../img/'+imgUrl" alt="">
+<a [href]="linkUrl">达内教育</a>
+
+<!--借助于ngStyle来实现样式的动态修改-->
+<p [ngStyle]="{color: myColor}">hello,i'm a paragraph</p>
+
+<!--借助于ngClass来实现样式类的动态绑定-->
+<h2 [ngClass]="{myBlue:false}">myColor will change</h2>

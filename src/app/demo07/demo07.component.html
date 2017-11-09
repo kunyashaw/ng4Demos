@@ -1,0 +1,22 @@
+<h1>This is Demo07</h1>
+
+<!--中括号是实现属性绑定
+将数据 绑定到了 视图
+-->
+<input type="text" [ngModel]="myAddr"/>
+<p>{{"用户地址为"+myAddr}}</p>
+
+<!--
+    双向数据绑定
+-->
+<input type="text" [(ngModel)]="myMsg"/>
+<p>{{"用户的留言信息时"+myMsg}}</p>
+
+<!--
+    在双向数据绑定的同时，监听用户的输入，并调用一个指定
+    的方法呢？
+-->
+<input type='text' [(ngModel)]="myPhone" 
+(ngModelChange)="getUserInput()"/>
+
+<p>{{"用户手机号为"+myPhone}}</p>
