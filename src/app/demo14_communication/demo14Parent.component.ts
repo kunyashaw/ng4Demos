@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { ViewChild, Component, OnInit } from '@angular/core';
 import { TXService } from './tx.service'
+
 @Component({
     selector: 'demo14Parent',
     providers: [TXService],
@@ -15,6 +16,7 @@ import { TXService } from './tx.service'
 //把本地变量(#mySon)放到(<demo14SecondSon>)标签中，用来代表子组件。
 //这样父组件的模板就得到了子组件的引用，于是可以在父组件的模板中访问子组件的所有属性和方法。
 export class Demo14ParentComponent implements OnInit {
+    @ViewChild('mySon') mySon: any;
     sonName = "zhangsan";
 
     constructor(private tx: TXService) { }
@@ -24,7 +26,7 @@ export class Demo14ParentComponent implements OnInit {
     }
 
     getMsg(component: any) {
-
+        console.log("mySon", this.mySon);
         console.log(component);
         console.log(component.score);
     }

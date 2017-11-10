@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { Demo18Guard } from './demo18_guard/can_enter.service'
-
+import { Demo05Component } from './demo05/demo05.component'
 import { Demo06Component } from './demo06/demo06.component'
 import { Demo09Component } from './demo09/demo09.component';
 import { Demo10Component } from './demo10/demo10.component'
@@ -21,9 +21,11 @@ import { Demo18Component } from './demo18_guard/demo18.component'
 import { Demo19Component } from './demo19_18n/demo19.component'
 import { Demo20Component } from './demo20_direcitve/demo20.component'
 import { Demo21Component } from './demo21_animate/demo21.component'
+import { Demo22Component } from './demo22_lifecycle/demo22.component'
+import { Demo23Component } from './demo22_lifecycle/demo23.component'
 
 const routes: Routes = [
-    { path: '', component: MailComponent },
+    { path: '', component: Demo14ParentComponent },
     { path: 'demo20', component: Demo20Component },
     { path: 'demo21', component: Demo21Component },
     { path: 'demo09', component: Demo09Component },
