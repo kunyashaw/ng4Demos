@@ -1,4 +1,4 @@
-import { Component, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked Input, SimpleChanges, OnInit, OnChanges, OnDestroy } from '@angular/core';
+import { Component, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked ,Input, SimpleChanges, OnInit, OnChanges, OnDestroy } from '@angular/core';
 
 @Component({
     selector: 'demo22',

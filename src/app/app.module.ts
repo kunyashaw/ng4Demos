@@ -48,10 +48,11 @@ import { ChangeBgColorDirective } from './demo20_direcitve/change-bgcolor.direci
 import { Demo21Component } from './demo21_animate/demo21.component'
 import { Demo22Component } from './demo22_lifecycle/demo22.component'
 import { Demo23Component } from './demo22_lifecycle/demo23.component'
+import { Demo24Component} from './demo24_all_checked/demo24.component'
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule, HttpModule],
   providers: [TestService, Demo18Guard, TRANSLATION_PROVIDERS, TranslateService],
-  declarations: [ChangeBgColorDirective, AppComponent, SexPipe, TranslatePipe, Demo01Component, Demo02Component, Demo03Component, Demo04Component, Demo05Component, Demo06Component, Demo07Component, Demo08Component, Demo09Component, Demo10Component, NotFoundComponent, Demo11Component, Demo12Component, TestDemo12Component, MailComponent, InboxComponent, OutboxComponent, Demo14ParentComponent, Demo14SonComponent, Demo15Component, Demo15CustomComponent, Demo16Component, Demo17Component, Demo18Component, Demo19Component, Demo14SecondSonComponent, Demo20Component, Demo21Component, Demo22Component, Demo23Component],
+  declarations: [Demo24Component,ChangeBgColorDirective, AppComponent, SexPipe, TranslatePipe, Demo01Component, Demo02Component, Demo03Component, Demo04Component, Demo05Component, Demo06Component, Demo07Component, Demo08Component, Demo09Component, Demo10Component, NotFoundComponent, Demo11Component, Demo12Component, TestDemo12Component, MailComponent, InboxComponent, OutboxComponent, Demo14ParentComponent, Demo14SonComponent, Demo15Component, Demo15CustomComponent, Demo16Component, Demo17Component, Demo18Component, Demo19Component, Demo14SecondSonComponent, Demo20Component, Demo21Component, Demo22Component, Demo23Component],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

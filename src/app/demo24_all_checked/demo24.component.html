@@ -1,0 +1,7 @@
+
+    <div *ngFor="let tmp of list">
+            <input type="checkbox"  [(ngModel)]="tmp.isChecked" (ngModelChange)="changeOne($event)"/>
+            <span>{{tmp.title}}</span>
+    </div>
+    <br/>
+    <input type="checkbox"  [(ngModel)]="isAllChecked" (ngModelChange)="changeAll($event)"> 全选

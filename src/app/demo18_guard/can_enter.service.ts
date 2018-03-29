@@ -20,6 +20,7 @@ export class Demo18Guard implements CanActivate {
         }
     }
 
+
     // canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> {
     //     var num = Math.random();
     //     console.log(num);

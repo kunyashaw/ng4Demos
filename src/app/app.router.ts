@@ -23,9 +23,10 @@ import { Demo20Component } from './demo20_direcitve/demo20.component'
 import { Demo21Component } from './demo21_animate/demo21.component'
 import { Demo22Component } from './demo22_lifecycle/demo22.component'
 import { Demo23Component } from './demo22_lifecycle/demo23.component'
+import { Demo24Component} from './demo24_all_checked/demo24.component'
 
 const routes: Routes = [
-    { path: '', component: Demo14ParentComponent },
+    { path: '', component: Demo17Component },
     { path: 'demo20', component: Demo20Component },
     { path: 'demo21', component: Demo21Component },
     { path: 'demo09', component: Demo09Component },

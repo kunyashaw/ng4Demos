@@ -11,5 +11,7 @@ export class Demo14SecondSonComponent implements OnInit {
     score = 80;
     constructor() { }
 
-    ngOnInit() { }
+    ngOnInit() { 
+        console.log('---',this);
+    }
 }
